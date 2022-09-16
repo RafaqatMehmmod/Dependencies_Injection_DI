@@ -49,4 +49,11 @@ public class Mobile {
     {
         Log.i(MY_TAG, "Mobile Run Call: ");
     }
+
+    //Method Injection
+    @Inject
+    public void connectCharger(Charger charger)
+    {
+        charger.setCharger(this);
+    }
 }
