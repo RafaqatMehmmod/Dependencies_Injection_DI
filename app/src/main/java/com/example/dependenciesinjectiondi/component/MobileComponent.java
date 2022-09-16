@@ -1,5 +1,6 @@
 package com.example.dependenciesinjectiondi.component;
 
+import com.example.dependenciesinjectiondi.MainActivity;
 import com.example.dependenciesinjectiondi.model.Mobile;
 
 import dagger.Component;
@@ -20,4 +21,9 @@ public interface MobileComponent {
 
     //Ab Ager atna Code Run Kara gay to Issue Ay ga is ko nahe pata kis ka object create karna ha
     // Is Cheez ka Solution Yea ha Jis ka Object Bana ha us ka Constructor ka uper ja ka notation inject use kara ga
+
+
+    // call for filed injection
+
+    void inject(MainActivity activity);
 }
