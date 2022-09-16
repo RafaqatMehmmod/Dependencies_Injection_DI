@@ -47,7 +47,9 @@ public class Mobile {
 
     public void run()
     {
+        processor.start();
         Log.i(MY_TAG, "Mobile Run Call: ");
+
     }
 
     //Method Injection

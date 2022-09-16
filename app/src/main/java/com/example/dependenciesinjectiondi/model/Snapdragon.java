@@ -11,18 +11,14 @@ import javax.inject.Inject;
  * Whatsapp No:+923101025532
  * 16/09/2022
  */
+public class Snapdragon implements Processor{
+    @Inject
+    public Snapdragon() {
+        Log.i(MY_TAG, "Snap Dragon Call Const: ");
+    }
 
-//....Simple Working...............
-//public class Processor {
-//    @Inject
-//    public Processor() {
-//        Log.i(MY_TAG, "Processor Constructor Call: ");
-//    }
-//}
-
-
-    //Working On Interface using DI
-public interface Processor {
-
-    void start();
+    @Override
+    public void start() {
+        Log.i(MY_TAG, "Snap Dragon Start: ");
+    }
 }

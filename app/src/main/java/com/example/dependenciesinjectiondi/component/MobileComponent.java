@@ -3,6 +3,8 @@ package com.example.dependenciesinjectiondi.component;
 import com.example.dependenciesinjectiondi.MainActivity;
 import com.example.dependenciesinjectiondi.model.Mobile;
 import com.example.dependenciesinjectiondi.modules.BatteryModules;
+import com.example.dependenciesinjectiondi.modules.MediaTakModule;
+import com.example.dependenciesinjectiondi.modules.SnapdragonModule;
 
 import dagger.Component;
 
@@ -13,7 +15,9 @@ import dagger.Component;
  */
 
 //@Component   //Dagger Notation Simple Field , Construction and Method Injection then use this
-@Component (modules = BatteryModules.class)  //Dagger Notation but Use Model Injection then Use this
+//@Component (modules = BatteryModules.class)  //Dagger Notation but Use Model Injection then Use this
+// @Component (modules = {BatteryModules.class, SnapdragonModule.class})  //Jub ek sa zayada Module Ho gay to {,} use kara gay
+ @Component (modules = {BatteryModules.class, MediaTakModule.class})  //Processor ka 2 module ko call nahe kar sakta us sa conflit a jy gay ka kon sa run karo is lea dono ma sa ek call karna ha
 public interface MobileComponent {
 
     //Important Point
