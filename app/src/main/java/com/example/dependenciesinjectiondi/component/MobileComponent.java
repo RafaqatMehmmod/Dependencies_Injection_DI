@@ -2,6 +2,7 @@ package com.example.dependenciesinjectiondi.component;
 
 import com.example.dependenciesinjectiondi.MainActivity;
 import com.example.dependenciesinjectiondi.model.Mobile;
+import com.example.dependenciesinjectiondi.modules.BatteryModules;
 
 import dagger.Component;
 
@@ -11,7 +12,8 @@ import dagger.Component;
  * 16/09/2022
  */
 
-@Component   //Dagger Notation
+//@Component   //Dagger Notation Simple Field , Construction and Method Injection then use this
+@Component (modules = BatteryModules.class)  //Dagger Notation but Use Model Injection then Use this
 public interface MobileComponent {
 
     //Important Point

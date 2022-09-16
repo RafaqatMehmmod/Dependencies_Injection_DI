@@ -51,9 +51,9 @@ public class Mobile {
     }
 
     //Method Injection
-    @Inject
-    public void connectCharger(Charger charger)
-    {
-        charger.setCharger(this);
-    }
+//    @Inject
+//    public void connectCharger(Charger charger)
+//    {
+//        charger.setCharger(this);
+//    }
 }

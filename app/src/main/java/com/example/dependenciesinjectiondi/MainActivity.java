@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+
 import com.example.dependenciesinjectiondi.component.DaggerMobileComponent;
 import com.example.dependenciesinjectiondi.component.MobileComponent;
 import com.example.dependenciesinjectiondi.model.Battery;
